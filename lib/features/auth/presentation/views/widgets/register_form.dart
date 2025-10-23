@@ -6,8 +6,8 @@ import '../../../../../core/widgets/custom_password_text_form_field.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../generated/l10n.dart';
 
-class LoginForm extends StatelessWidget {
-  const LoginForm({super.key});
+class RegisterForm extends StatelessWidget {
+  const RegisterForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,17 @@ class LoginForm extends StatelessWidget {
           onChanged: (value) {},
           title: S.of(context).enterPassword,
         ),
-        SizedBox(height: 70),
+        SizedBox(height: 25),
+        Text(
+          S.of(context).confirmPass,
+          style: AppTextStyles.regular16.copyWith(color: AppColors.white),
+        ),
+        SizedBox(height: 10),
+        CustomPasswordTextFormField(
+          onChanged: (value) {},
+          title: S.of(context).enterPassword,
+        ),
+        SizedBox(height: 40),
       ],
     );
   }

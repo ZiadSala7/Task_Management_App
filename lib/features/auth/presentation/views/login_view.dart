@@ -12,7 +12,7 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: AppColors.black),
-      body: FadeIn(delay: Duration(seconds: 1), child: LoginViewBody()),
+      body: FadeIn(delay: Duration(milliseconds: 500), child: LoginViewBody()),
     );
   }
 }

@@ -7,5 +7,9 @@ ThemeData appThemeData() {
   return ThemeData(
     scaffoldBackgroundColor: AppColors.black,
     fontFamily: fontFamily,
+    iconTheme: IconThemeData(color: AppColors.white),
+    appBarTheme: AppBarThemeData(
+      iconTheme: IconThemeData(color: AppColors.white),
+    ),
   );
 }

@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Welcome to UpTodo",
     ),
     "back": MessageLookupByLibrary.simpleMessage("Back"),
+    "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "createAccount": MessageLookupByLibrary.simpleMessage("CREATE ACCOUNT"),
     "doNotHave": MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
     "enterPassword": MessageLookupByLibrary.simpleMessage("▪▪▪▪▪▪▪▪▪"),

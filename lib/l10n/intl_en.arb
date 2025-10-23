@@ -23,5 +23,6 @@
     "logWithGoogle": "Login with Google",
     "logWithApple": "Login with Apple",
     "doNotHave": "Don’t have an account?",
-    "HaveAcc": "Already have an account?"
+    "HaveAcc": "Already have an account?",
+    "confirmPass": "Confirm Password"
 }

@@ -1,0 +1,1 @@
+const String fontWeight = 'Lato';

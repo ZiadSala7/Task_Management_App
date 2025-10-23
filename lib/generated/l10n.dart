@@ -168,6 +168,86 @@ class S {
       args: [],
     );
   }
+
+  /// `Login`
+  String get loginView {
+    return Intl.message('Login', name: 'loginView', desc: '', args: []);
+  }
+
+  /// `Register`
+  String get register {
+    return Intl.message('Register', name: 'register', desc: '', args: []);
+  }
+
+  /// `Username`
+  String get userName {
+    return Intl.message('Username', name: 'userName', desc: '', args: []);
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message('Password', name: 'password', desc: '', args: []);
+  }
+
+  /// `Enter Your Username`
+  String get enterUsername {
+    return Intl.message(
+      'Enter Your Username',
+      name: 'enterUsername',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `▪▪▪▪▪▪▪▪▪`
+  String get enterPassword {
+    return Intl.message('▪▪▪▪▪▪▪▪▪', name: 'enterPassword', desc: '', args: []);
+  }
+
+  /// `Or`
+  String get or {
+    return Intl.message('Or', name: 'or', desc: '', args: []);
+  }
+
+  /// `Login with Google`
+  String get logWithGoogle {
+    return Intl.message(
+      'Login with Google',
+      name: 'logWithGoogle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login with Apple`
+  String get logWithApple {
+    return Intl.message(
+      'Login with Apple',
+      name: 'logWithApple',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don’t have an account?`
+  String get doNotHave {
+    return Intl.message(
+      'Don’t have an account?',
+      name: 'doNotHave',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get HaveAcc {
+    return Intl.message(
+      'Already have an account?',
+      name: 'HaveAcc',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

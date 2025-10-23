@@ -31,12 +31,14 @@ class AuthChooserViewBody extends StatelessWidget {
             ),
             Expanded(child: SizedBox()),
             CustomButton(
+              isActive: true,
               onPressed: () {
                 Navigator.of(context).pushReplacementNamed(LoginView.id);
               },
               title: S.of(context).login,
             ),
             CustomButton(
+              isActive: true,
               onPressed: () {
                 Navigator.of(context).pushReplacementNamed(RegisterView.id);
               },

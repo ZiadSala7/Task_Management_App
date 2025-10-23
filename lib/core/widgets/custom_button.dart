@@ -8,19 +8,22 @@ class CustomButton extends StatelessWidget {
   final String title;
   final double fontSize;
   final Color background, border;
+  final bool isActive;
   const CustomButton({
     super.key,
     required this.onPressed,
     required this.title,
     this.fontSize = 20,
     this.background = AppColors.softPurple,
-    this.border = AppColors.softPurple,
+    this.border = AppColors.disabledBackground,
+    this.isActive = false,
   });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
+        disabledBackgroundColor: AppColors.disabledBackground,
         padding: EdgeInsets.all(13),
         shape: RoundedRectangleBorder(
           side: BorderSide(width: 2, color: border),
@@ -28,7 +31,7 @@ class CustomButton extends StatelessWidget {
         ),
         backgroundColor: background,
       ),
-      onPressed: onPressed,
+      onPressed: isActive ? onPressed : null,
       child: Text(
         title,
         style: AppTextStyles.regular20.copyWith(

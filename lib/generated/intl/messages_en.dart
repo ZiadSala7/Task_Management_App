@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "HaveAcc": MessageLookupByLibrary.simpleMessage("Already have an account?"),
     "authChooserDesc": MessageLookupByLibrary.simpleMessage(
       "Please login to your account or create \nnew account to continue",
     ),
@@ -30,13 +31,24 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "back": MessageLookupByLibrary.simpleMessage("Back"),
     "createAccount": MessageLookupByLibrary.simpleMessage("CREATE ACCOUNT"),
+    "doNotHave": MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
+    "enterPassword": MessageLookupByLibrary.simpleMessage("▪▪▪▪▪▪▪▪▪"),
+    "enterUsername": MessageLookupByLibrary.simpleMessage(
+      "Enter Your Username",
+    ),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "logWithApple": MessageLookupByLibrary.simpleMessage("Login with Apple"),
+    "logWithGoogle": MessageLookupByLibrary.simpleMessage("Login with Google"),
     "login": MessageLookupByLibrary.simpleMessage("LOGIN"),
+    "loginView": MessageLookupByLibrary.simpleMessage("Login"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "oneOnDesc": MessageLookupByLibrary.simpleMessage(
       "You can easily manage all of your daily \ntasks in DoMe for free",
     ),
     "oneOnTitle": MessageLookupByLibrary.simpleMessage("Manage your tasks"),
+    "or": MessageLookupByLibrary.simpleMessage("Or"),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "register": MessageLookupByLibrary.simpleMessage("Register"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "threeOnDesc": MessageLookupByLibrary.simpleMessage(
       "You can organize your daily tasks by \nadding your tasks into separate categories",
@@ -46,5 +58,6 @@ class MessageLookup extends MessageLookupByLibrary {
       "In Uptodo  you can create your \npersonalized routine to stay productive",
     ),
     "twoOnTitle": MessageLookupByLibrary.simpleMessage("Create daily routine"),
+    "userName": MessageLookupByLibrary.simpleMessage("Username"),
   };
 }

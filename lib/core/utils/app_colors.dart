@@ -16,6 +16,7 @@ abstract class AppColors {
   static const Color softRed = Color(0xFFFFC1C1);
   static const Color lightPink = Color(0xFFFFB3B6);
   static const Color accentMagenta = Color(0xFFA30089);
+  static const Color disabledBackground = Color(0xFF4C4c7c);
 
   // Grayscale Palette
   static const Color black = Color(0xFF000000);
@@ -31,6 +32,7 @@ abstract class AppColors {
   static const Color gray150 = Color(0xFFE0E0E0);
   static const Color gray100 = Color(0xFFF0F0F0);
   static const Color gray50 = Color(0xFFF5F5F5);
+  static const Color gray0 = Color(0xFF535353);
 
   // Whites with different transparencies
   static const Color white = Color(0xFFFFFFFF);

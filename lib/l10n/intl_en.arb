@@ -12,5 +12,16 @@
     "authChooserTitle": "Welcome to UpTodo",
     "authChooserDesc": "Please login to your account or create \nnew account to continue",
     "login": "LOGIN",
-    "createAccount": "CREATE ACCOUNT"
+    "createAccount": "CREATE ACCOUNT",
+    "loginView": "Login",
+    "register": "Register",
+    "userName": "Username",
+    "password": "Password",
+    "enterUsername": "Enter Your Username",
+    "enterPassword": "▪▪▪▪▪▪▪▪▪",
+    "or": "Or",
+    "logWithGoogle": "Login with Google",
+    "logWithApple": "Login with Apple",
+    "doNotHave": "Don’t have an account?",
+    "HaveAcc": "Already have an account?"
 }

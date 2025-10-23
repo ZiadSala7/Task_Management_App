@@ -20,7 +20,7 @@ class CustomButton extends StatelessWidget {
         ),
         backgroundColor: AppColors.softPurple,
       ),
-      onPressed: () => onModel.nextOnPressed,
+      onPressed: onModel.nextOnPressed,
       child: Text(
         onModel.isLast ? S.of(context).getStarted : S.of(context).next,
         style: TextStyles.regular20.copyWith(

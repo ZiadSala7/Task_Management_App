@@ -32,7 +32,7 @@ class OnboardingViewBody extends StatelessWidget {
                   : AlignmentGeometry.topRight,
               child: CustomSkipAndBackButton(
                 title: S.of(context).skip,
-                onPressed: onModel.skipOnPreessed,
+                isBack: false,
               ),
             ),
             Image.asset(

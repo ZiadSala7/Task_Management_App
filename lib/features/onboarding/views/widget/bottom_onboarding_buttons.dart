@@ -15,10 +15,13 @@ class BottomOnboardingButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        CustomSkipAndBackButton(
-          title: S.of(context).back,
-          onPressed: onModel.backOnPressed,
-        ),
+        onModel.isFirst
+            ? SizedBox()
+            : CustomSkipAndBackButton(
+                title: S.of(context).back,
+                isBack: true,
+                onPressed: onModel.onBack,
+              ),
         CustomButton(onModel: onModel),
       ],
     );

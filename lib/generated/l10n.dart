@@ -53,13 +53,96 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Manage your tasks`
+  String get oneOnTitle {
+    return Intl.message(
+      'Manage your tasks',
+      name: 'oneOnTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You can easily manage all of your daily \ntasks in DoMe for free`
+  String get oneOnDesc {
+    return Intl.message(
+      'You can easily manage all of your daily \ntasks in DoMe for free',
+      name: 'oneOnDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create daily routine`
+  String get twoOnTitle {
+    return Intl.message(
+      'Create daily routine',
+      name: 'twoOnTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `In Uptodo  you can create your \npersonalized routine to stay productive`
+  String get twoOnDesc {
+    return Intl.message(
+      'In Uptodo  you can create your \npersonalized routine to stay productive',
+      name: 'twoOnDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Organize your tasks`
+  String get threeOnTitle {
+    return Intl.message(
+      'Organize your tasks',
+      name: 'threeOnTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You can organize your daily tasks by \nadding your tasks into separate categories`
+  String get threeOnDesc {
+    return Intl.message(
+      'You can organize your daily tasks by \nadding your tasks into separate categories',
+      name: 'threeOnDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skip`
+  String get skip {
+    return Intl.message('Skip', name: 'skip', desc: '', args: []);
+  }
+
+  /// `Next`
+  String get next {
+    return Intl.message('Next', name: 'next', desc: '', args: []);
+  }
+
+  /// `Back`
+  String get back {
+    return Intl.message('Back', name: 'back', desc: '', args: []);
+  }
+
+  /// `Get Started`
+  String get getStarted {
+    return Intl.message('Get Started', name: 'getStarted', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   const AppLocalizationDelegate();
 
   List<Locale> get supportedLocales {
-    return const <Locale>[Locale.fromSubtags(languageCode: 'en')];
+    return const <Locale>[
+      Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'ar'),
+    ];
   }
 
   @override

@@ -21,5 +21,22 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "back": MessageLookupByLibrary.simpleMessage("Back"),
+    "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "next": MessageLookupByLibrary.simpleMessage("Next"),
+    "oneOnDesc": MessageLookupByLibrary.simpleMessage(
+      "You can easily manage all of your daily \ntasks in DoMe for free",
+    ),
+    "oneOnTitle": MessageLookupByLibrary.simpleMessage("Manage your tasks"),
+    "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "threeOnDesc": MessageLookupByLibrary.simpleMessage(
+      "You can organize your daily tasks by \nadding your tasks into separate categories",
+    ),
+    "threeOnTitle": MessageLookupByLibrary.simpleMessage("Organize your tasks"),
+    "twoOnDesc": MessageLookupByLibrary.simpleMessage(
+      "In Uptodo  you can create your \npersonalized routine to stay productive",
+    ),
+    "twoOnTitle": MessageLookupByLibrary.simpleMessage("Create daily routine"),
+  };
 }

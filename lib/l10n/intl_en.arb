@@ -1,1 +1,12 @@
-{}
+{
+    "oneOnTitle": "Manage your tasks",
+    "oneOnDesc": "You can easily manage all of your daily \ntasks in DoMe for free",
+    "twoOnTitle": "Create daily routine",
+    "twoOnDesc": "In Uptodo  you can create your \npersonalized routine to stay productive",
+    "threeOnTitle": "Organize your tasks",
+    "threeOnDesc": "You can organize your daily tasks by \nadding your tasks into separate categories",
+    "skip": "Skip",
+    "next": "Next",
+    "back": "Back",
+    "getStarted": "Get Started"
+}

@@ -1,1 +1,4 @@
-const String fontWeight = 'Lato';
+import 'package:flutter/widgets.dart';
+
+const String fontFamily = 'Lato';
+PageController controller = PageController();

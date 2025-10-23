@@ -23,7 +23,7 @@ class CustomSkipAndBackButton extends StatelessWidget {
           : () {
               Navigator.of(context).pushReplacementNamed(AuthChooserView.id);
             },
-      child: Text(title, style: TextStyles.regular20),
+      child: Text(title, style: AppTextStyles.regular20),
     );
   }
 }

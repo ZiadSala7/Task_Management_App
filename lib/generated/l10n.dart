@@ -133,6 +133,41 @@ class S {
   String get getStarted {
     return Intl.message('Get Started', name: 'getStarted', desc: '', args: []);
   }
+
+  /// `Welcome to UpTodo`
+  String get authChooserTitle {
+    return Intl.message(
+      'Welcome to UpTodo',
+      name: 'authChooserTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please login to your account or create \nnew account to continue`
+  String get authChooserDesc {
+    return Intl.message(
+      'Please login to your account or create \nnew account to continue',
+      name: 'authChooserDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `LOGIN`
+  String get login {
+    return Intl.message('LOGIN', name: 'login', desc: '', args: []);
+  }
+
+  /// `CREATE ACCOUNT`
+  String get createAccount {
+    return Intl.message(
+      'CREATE ACCOUNT',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

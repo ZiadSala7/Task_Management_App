@@ -22,8 +22,16 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "authChooserDesc": MessageLookupByLibrary.simpleMessage(
+      "Please login to your account or create \nnew account to continue",
+    ),
+    "authChooserTitle": MessageLookupByLibrary.simpleMessage(
+      "Welcome to UpTodo",
+    ),
     "back": MessageLookupByLibrary.simpleMessage("Back"),
+    "createAccount": MessageLookupByLibrary.simpleMessage("CREATE ACCOUNT"),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "login": MessageLookupByLibrary.simpleMessage("LOGIN"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "oneOnDesc": MessageLookupByLibrary.simpleMessage(
       "You can easily manage all of your daily \ntasks in DoMe for free",

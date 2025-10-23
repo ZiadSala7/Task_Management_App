@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/widgets/custom_button.dart';
 import '../../../../generated/l10n.dart';
 import '../../data/onboarding_model.dart';
+import 'custom_onboarding_button.dart';
 import 'custom_skip_and_back_button.dart';
 
 class BottomOnboardingButtons extends StatelessWidget {
@@ -22,7 +22,7 @@ class BottomOnboardingButtons extends StatelessWidget {
                 isBack: true,
                 onPressed: onModel.onBack,
               ),
-        CustomButton(onModel: onModel),
+        CustomOnboardingButton(onModel: onModel),
       ],
     );
   }

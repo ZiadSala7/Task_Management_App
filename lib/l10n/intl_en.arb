@@ -8,5 +8,9 @@
     "skip": "Skip",
     "next": "Next",
     "back": "Back",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "authChooserTitle": "Welcome to UpTodo",
+    "authChooserDesc": "Please login to your account or create \nnew account to continue",
+    "login": "LOGIN",
+    "createAccount": "CREATE ACCOUNT"
 }

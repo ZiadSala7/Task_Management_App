@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/app_text_styles.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../data/onboarding_model.dart';
 
@@ -12,23 +13,12 @@ class OnboardingBodyTexts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
-          onModel.title,
-          style: TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
-            color: AppColors.white,
-          ),
-        ),
+        Text(onModel.title, style: AppTextStyles.bold32),
         SizedBox(height: 42),
         Text(
           onModel.desc,
           textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.normal,
-            color: AppColors.white,
-          ),
+          style: AppTextStyles.regular18.copyWith(color: AppColors.white),
         ),
       ],
     );

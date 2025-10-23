@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
 import 'widget/auth_chooser_view_body.dart';
@@ -8,6 +9,8 @@ class AuthChooserView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: AuthChooserViewBody());
+    return Scaffold(
+      body: FadeIn(delay: Duration(seconds: 1), child: AuthChooserViewBody()),
+    );
   }
 }

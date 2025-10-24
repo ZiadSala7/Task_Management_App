@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "HaveAcc": MessageLookupByLibrary.simpleMessage("Already have an account?"),
+    "addTask": MessageLookupByLibrary.simpleMessage("Add Task"),
     "authChooserDesc": MessageLookupByLibrary.simpleMessage(
       "Please login to your account or create \nnew account to continue",
     ),
@@ -30,14 +31,24 @@ class MessageLookup extends MessageLookupByLibrary {
       "Welcome to UpTodo",
     ),
     "back": MessageLookupByLibrary.simpleMessage("Back"),
+    "calendar": MessageLookupByLibrary.simpleMessage("Calendar"),
     "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "createAccount": MessageLookupByLibrary.simpleMessage("CREATE ACCOUNT"),
+    "desc": MessageLookupByLibrary.simpleMessage("Description"),
     "doNotHave": MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
+    "emptyHomeDesc": MessageLookupByLibrary.simpleMessage(
+      "Tap + to add your tasks",
+    ),
+    "emptyHomeTitle": MessageLookupByLibrary.simpleMessage(
+      "What do you want to do today?",
+    ),
     "enterPassword": MessageLookupByLibrary.simpleMessage("▪▪▪▪▪▪▪▪▪"),
     "enterUsername": MessageLookupByLibrary.simpleMessage(
       "Enter Your Username",
     ),
+    "focus": MessageLookupByLibrary.simpleMessage("Focus"),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "home": MessageLookupByLibrary.simpleMessage("Home"),
     "logWithApple": MessageLookupByLibrary.simpleMessage("Login with Apple"),
     "logWithGoogle": MessageLookupByLibrary.simpleMessage("Login with Google"),
     "login": MessageLookupByLibrary.simpleMessage("LOGIN"),
@@ -49,12 +60,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "oneOnTitle": MessageLookupByLibrary.simpleMessage("Manage your tasks"),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "register": MessageLookupByLibrary.simpleMessage("Register"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "taskaty": MessageLookupByLibrary.simpleMessage("Your Tasks"),
     "threeOnDesc": MessageLookupByLibrary.simpleMessage(
       "You can organize your daily tasks by \nadding your tasks into separate categories",
     ),
     "threeOnTitle": MessageLookupByLibrary.simpleMessage("Organize your tasks"),
+    "titleTask": MessageLookupByLibrary.simpleMessage("Write your task here"),
     "twoOnDesc": MessageLookupByLibrary.simpleMessage(
       "In Uptodo  you can create your \npersonalized routine to stay productive",
     ),

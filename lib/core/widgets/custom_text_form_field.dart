@@ -12,10 +12,10 @@ class CustomTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       onChanged: (value) {},
-      style: TextStyle(color: AppColors.white),
+      style: TextStyle(color: AppColors.white, fontSize: 20),
       decoration: InputDecoration(
         focusedBorder: textFormFieldBuildBorder(),
-        enabledBorder: textFormFieldBuildBorder(),
+        // enabledBorder: textFormFieldBuildBorder(),
         filled: true,
         fillColor: AppColors.darkGray,
         hintText: title,

@@ -9,6 +9,7 @@ ThemeData appThemeData() {
     fontFamily: fontFamily,
     iconTheme: IconThemeData(color: AppColors.white),
     appBarTheme: AppBarThemeData(
+      backgroundColor: AppColors.black,
       iconTheme: IconThemeData(color: AppColors.white),
     ),
   );

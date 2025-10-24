@@ -32,14 +32,14 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  intl: ^0.20.2
+  flutter_bloc: ^9.1.1
   flutter_launcher_icons: ^0.14.4
-  hive_flutter: ^1.1.0
-  shared_preferences: ^2.5.3
   flutter_localizations:
-        sdk: flutter
+    sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.20.2
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_lints: ^5.0.0
@@ -74,7 +74,6 @@ flutter:
           weight: 700
         - asset: assets/fonts/Lato-Regular.ttf
           weight: 400
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_intl:
@@ -86,4 +85,3 @@ flutter_assets:
   output_path: lib/core/utils/
   filename: app_assets.dart
   classname: AppAssets
-

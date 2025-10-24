@@ -24,5 +24,15 @@
     "logWithApple": "Login with Apple",
     "doNotHave": "Don’t have an account?",
     "HaveAcc": "Already have an account?",
-    "confirmPass": "Confirm Password"
+    "confirmPass": "Confirm Password",
+    "emptyHomeTitle": "What do you want to do today?",
+    "emptyHomeDesc": "Tap + to add your tasks",
+    "addTask": "Add Task",
+    "desc": "Description",
+    "titleTask": "Write your task here",
+    "home": "Home",
+    "calendar": "Calendar",
+    "focus": "Focus",
+    "profile": "Profile",
+    "taskaty": "Your Tasks"
 }

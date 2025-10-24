@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
-abstract class AppAssets {
+class AppAssets {
   AppAssets._();
-
+  
   /// Assets for assetsImagesAppLogo
   /// assets/images/appLogo.png
   static const String assetsImagesAppLogo = "assets/images/appLogo.png";
@@ -9,6 +9,10 @@ abstract class AppAssets {
   /// Assets for assetsImagesApple
   /// assets/images/apple.png
   static const String assetsImagesApple = "assets/images/apple.png";
+
+  /// Assets for assetsImagesAvatar
+  /// assets/images/avatar.jpg
+  static const String assetsImagesAvatar = "assets/images/avatar.jpg";
 
   /// Assets for assetsImagesEmptyList
   /// assets/images/emptyList.png
@@ -38,3 +42,4 @@ abstract class AppAssets {
   /// assets/images/UpTodo.png
   static const String assetsImagesUpTodo = "assets/images/UpTodo.png";
 }
+

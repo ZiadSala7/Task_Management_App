@@ -258,6 +258,71 @@ class S {
       args: [],
     );
   }
+
+  /// `What do you want to do today?`
+  String get emptyHomeTitle {
+    return Intl.message(
+      'What do you want to do today?',
+      name: 'emptyHomeTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tap + to add your tasks`
+  String get emptyHomeDesc {
+    return Intl.message(
+      'Tap + to add your tasks',
+      name: 'emptyHomeDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Task`
+  String get addTask {
+    return Intl.message('Add Task', name: 'addTask', desc: '', args: []);
+  }
+
+  /// `Description`
+  String get desc {
+    return Intl.message('Description', name: 'desc', desc: '', args: []);
+  }
+
+  /// `Write your task here`
+  String get titleTask {
+    return Intl.message(
+      'Write your task here',
+      name: 'titleTask',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message('Home', name: 'home', desc: '', args: []);
+  }
+
+  /// `Calendar`
+  String get calendar {
+    return Intl.message('Calendar', name: 'calendar', desc: '', args: []);
+  }
+
+  /// `Focus`
+  String get focus {
+    return Intl.message('Focus', name: 'focus', desc: '', args: []);
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message('Profile', name: 'profile', desc: '', args: []);
+  }
+
+  /// `Your Tasks`
+  String get taskaty {
+    return Intl.message('Your Tasks', name: 'taskaty', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

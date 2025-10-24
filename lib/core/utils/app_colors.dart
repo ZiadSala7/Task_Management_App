@@ -17,6 +17,7 @@ abstract class AppColors {
   static const Color lightPink = Color(0xFFFFB3B6);
   static const Color accentMagenta = Color(0xFFA30089);
   static const Color disabledBackground = Color(0xFF4C4c7c);
+  static const Color bottomNavClr = Color(0xff2E2E2E);
 
   // Grayscale Palette
   static const Color black = Color(0xFF000000);

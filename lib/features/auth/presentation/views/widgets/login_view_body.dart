@@ -38,7 +38,13 @@ class LoginViewBody extends StatelessWidget {
               title: S.of(context).logWithGoogle,
               onPressed: () {},
             ),
-            SizedBox(height: 100),
+            SizedBox(height: 20),
+            SocialMediaButtonLogin(
+              icon: AppAssets.assetsImagesApple,
+              title: S.of(context).logWithApple,
+              onPressed: () {},
+            ),
+            SizedBox(height: 50),
             HaveAccountOrNotWidget(
               textTitle: S.of(context).doNotHave,
               btnTitle: S.of(context).register,

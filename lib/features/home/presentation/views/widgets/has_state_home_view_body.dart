@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+
+import '../../../../../core/widgets/custom_text_form_field.dart';
+import '../../../../../generated/l10n.dart';
+import '../../../data/models/task_model.dart';
+import 'display_tasks_buttons_section.dart';
+
+class HasStateHomeViewBody extends StatelessWidget {
+  final List<TaskModel> tasks;
+  const HasStateHomeViewBody({super.key, required this.tasks});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(10),
+      height: double.infinity,
+      width: double.infinity,
+      child: ListView(
+        children: [
+          CustomTextFormField(
+            title: S.of(context).searchForTask,
+            hasPrefix: true,
+          ),
+          SizedBox(height: 15),
+          DisplayTasksButtonsSection(tasks: tasks),
+        ],
+      ),
+    );
+  }
+}

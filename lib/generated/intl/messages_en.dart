@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "back": MessageLookupByLibrary.simpleMessage("Back"),
     "calendar": MessageLookupByLibrary.simpleMessage("Calendar"),
+    "completed": MessageLookupByLibrary.simpleMessage("Completed"),
     "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "createAccount": MessageLookupByLibrary.simpleMessage("CREATE ACCOUNT"),
     "desc": MessageLookupByLibrary.simpleMessage("Description"),
@@ -62,6 +63,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "register": MessageLookupByLibrary.simpleMessage("Register"),
+    "searchForTask": MessageLookupByLibrary.simpleMessage(
+      "Search for your task...",
+    ),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "taskaty": MessageLookupByLibrary.simpleMessage("Your Tasks"),
     "threeOnDesc": MessageLookupByLibrary.simpleMessage(
@@ -69,6 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "threeOnTitle": MessageLookupByLibrary.simpleMessage("Organize your tasks"),
     "titleTask": MessageLookupByLibrary.simpleMessage("Write your task here"),
+    "today": MessageLookupByLibrary.simpleMessage("Today"),
     "twoOnDesc": MessageLookupByLibrary.simpleMessage(
       "In Uptodo  you can create your \npersonalized routine to stay productive",
     ),

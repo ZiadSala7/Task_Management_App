@@ -6,7 +6,13 @@ import '../utils/app_colors.dart';
 class CustomTextFormField extends StatelessWidget {
   final String title;
   final Function(String)? onChanged;
-  const CustomTextFormField({super.key, this.onChanged, required this.title});
+  final bool hasPrefix;
+  const CustomTextFormField({
+    super.key,
+    this.onChanged,
+    required this.title,
+    this.hasPrefix = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +20,15 @@ class CustomTextFormField extends StatelessWidget {
       onChanged: (value) {},
       style: TextStyle(color: AppColors.white, fontSize: 20),
       decoration: InputDecoration(
-        focusedBorder: textFormFieldBuildBorder(),
-        // enabledBorder: textFormFieldBuildBorder(),
+        focusedBorder: textFormFieldFocusBorder(),
+        enabledBorder: textFormFieldOutlineBorder(),
         filled: true,
         fillColor: AppColors.darkGray,
         hintText: title,
         hintStyle: TextStyle(color: AppColors.gray500),
+        prefixIcon: hasPrefix
+            ? Icon(Icons.search, color: AppColors.gray500)
+            : null,
       ),
     );
   }

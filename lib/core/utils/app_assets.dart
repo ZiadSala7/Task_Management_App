@@ -18,6 +18,10 @@ class AppAssets {
   /// assets/images/emptyList.png
   static const String assetsImagesEmptyList = "assets/images/emptyList.png";
 
+  /// Assets for assetsImagesFlag
+  /// assets/images/flag.png
+  static const String assetsImagesFlag = "assets/images/flag.png";
+
   /// Assets for assetsImagesGoogle
   /// assets/images/google.png
   static const String assetsImagesGoogle = "assets/images/google.png";
@@ -26,13 +30,25 @@ class AppAssets {
   /// assets/images/oneOn.png
   static const String assetsImagesOneOn = "assets/images/oneOn.png";
 
+  /// Assets for assetsImagesSend
+  /// assets/images/send.png
+  static const String assetsImagesSend = "assets/images/send.png";
+
   /// Assets for assetsImagesSplash
   /// assets/images/splash.png
   static const String assetsImagesSplash = "assets/images/splash.png";
 
+  /// Assets for assetsImagesTag
+  /// assets/images/tag.png
+  static const String assetsImagesTag = "assets/images/tag.png";
+
   /// Assets for assetsImagesThreeOn
   /// assets/images/threeOn.png
   static const String assetsImagesThreeOn = "assets/images/threeOn.png";
+
+  /// Assets for assetsImagesTimer
+  /// assets/images/timer.png
+  static const String assetsImagesTimer = "assets/images/timer.png";
 
   /// Assets for assetsImagesTwoOn
   /// assets/images/twoOn.png

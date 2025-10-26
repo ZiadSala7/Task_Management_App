@@ -323,6 +323,26 @@ class S {
   String get taskaty {
     return Intl.message('Your Tasks', name: 'taskaty', desc: '', args: []);
   }
+
+  /// `Today`
+  String get today {
+    return Intl.message('Today', name: 'today', desc: '', args: []);
+  }
+
+  /// `Completed`
+  String get completed {
+    return Intl.message('Completed', name: 'completed', desc: '', args: []);
+  }
+
+  /// `Search for your task...`
+  String get searchForTask {
+    return Intl.message(
+      'Search for your task...',
+      name: 'searchForTask',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

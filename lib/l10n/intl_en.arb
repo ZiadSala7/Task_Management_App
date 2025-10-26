@@ -34,5 +34,8 @@
     "calendar": "Calendar",
     "focus": "Focus",
     "profile": "Profile",
-    "taskaty": "Your Tasks"
+    "taskaty": "Your Tasks",
+    "today": "Today",
+    "completed": "Completed",
+    "searchForTask": "Search for your task..."
 }

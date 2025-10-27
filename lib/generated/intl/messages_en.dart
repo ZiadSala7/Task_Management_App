@@ -32,6 +32,8 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "back": MessageLookupByLibrary.simpleMessage("Back"),
     "calendar": MessageLookupByLibrary.simpleMessage("Calendar"),
+    "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+    "chooseTime": MessageLookupByLibrary.simpleMessage("Choose Time"),
     "completed": MessageLookupByLibrary.simpleMessage("Completed"),
     "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "createAccount": MessageLookupByLibrary.simpleMessage("CREATE ACCOUNT"),
@@ -63,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "register": MessageLookupByLibrary.simpleMessage("Register"),
+    "save": MessageLookupByLibrary.simpleMessage("Save"),
     "searchForTask": MessageLookupByLibrary.simpleMessage(
       "Search for your task...",
     ),

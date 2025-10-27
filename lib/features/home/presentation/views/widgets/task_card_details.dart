@@ -12,20 +12,29 @@ class TaskCardDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 90,
-      decoration: BoxDecoration(
-        color: AppColors.bottomNavClr,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      margin: EdgeInsets.only(bottom: 15),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Expanded(flex: 1, child: CheckTaskCompletedButton()),
-          Expanded(flex: 3, child: TaskTitleAndTimeSection(task: task)),
-          Expanded(flex: 3, child: TaskCategoryAndPrioritySection(task: task)),
-        ],
+    return InkWell(
+      onTap: () {
+        // from here we will navigate to the task details view
+        // we can go and edit or delete task
+      },
+      child: Container(
+        height: 90,
+        decoration: BoxDecoration(
+          color: AppColors.bottomNavClr,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        margin: EdgeInsets.only(bottom: 15),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Expanded(flex: 1, child: CheckTaskCompletedButton()),
+            Expanded(flex: 3, child: TaskTitleAndTimeSection(task: task)),
+            Expanded(
+              flex: 3,
+              child: TaskCategoryAndPrioritySection(task: task),
+            ),
+          ],
+        ),
       ),
     );
   }

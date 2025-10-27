@@ -27,7 +27,7 @@ class TaskCategoryAndPrioritySection extends StatelessWidget {
             children: [
               Icon(Icons.home, size: 15),
               Text(
-                task.category,
+                task.catName,
                 style: AppTextStyles.regular16.copyWith(color: AppColors.white),
               ),
             ],

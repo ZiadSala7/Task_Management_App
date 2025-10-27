@@ -37,5 +37,8 @@
     "taskaty": "Your Tasks",
     "today": "Today",
     "completed": "Completed",
-    "searchForTask": "Search for your task..."
+    "searchForTask": "Search for your task...",
+    "chooseTime": "Choose Time",
+    "cancel": "Cancel",
+    "save": "Save"
 }

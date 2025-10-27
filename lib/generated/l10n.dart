@@ -343,6 +343,21 @@ class S {
       args: [],
     );
   }
+
+  /// `Choose Time`
+  String get chooseTime {
+    return Intl.message('Choose Time', name: 'chooseTime', desc: '', args: []);
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message('Cancel', name: 'cancel', desc: '', args: []);
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message('Save', name: 'save', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

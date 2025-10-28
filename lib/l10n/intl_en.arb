@@ -40,5 +40,7 @@
     "searchForTask": "Search for your task...",
     "chooseTime": "Choose Time",
     "cancel": "Cancel",
-    "save": "Save"
+    "save": "Save",
+    "addCategory": "Add Category",
+    "chooseCategory": "Choose Category"
 }

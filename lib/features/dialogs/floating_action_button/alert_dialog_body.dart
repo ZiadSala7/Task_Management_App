@@ -2,13 +2,15 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../features/home/presentation/managers/task_cubit/task_handler_cubit.dart';
-import '../utils/app_assets.dart';
-import '../utils/app_text_styles.dart';
-import '../../generated/l10n.dart';
-import '../utils/app_colors.dart';
-import 'date_picker/custom_date_picker.dart';
-import 'dialog_text_field.dart';
+import '../../home/presentation/managers/task_cubit/task_handler_cubit.dart';
+import '../../../core/utils/app_assets.dart';
+import '../../../core/utils/app_text_styles.dart';
+import '../../../generated/l10n.dart';
+import '../../../core/utils/app_colors.dart';
+import '../category/data/category_model.dart';
+import '../category/widgets/category_dialog.dart';
+import '../date_picker/custom_date_picker.dart';
+import '../../../core/widgets/dialog_text_field.dart';
 
 class AlertDialogBody extends StatelessWidget {
   const AlertDialogBody({super.key});
@@ -67,7 +69,12 @@ class AlertDialogBody extends StatelessWidget {
                     icon: Image.asset(AppAssets.assetsImagesFlag),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      await showDialog<CategoryModel>(
+                        context: context,
+                        builder: (_) => const CategoryDialog(),
+                      );
+                    },
                     icon: Image.asset(AppAssets.assetsImagesTag),
                   ),
                 ],

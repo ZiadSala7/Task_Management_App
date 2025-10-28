@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
-import 'alert_dialog_body.dart';
+import '../../features/dialogs/floating_action_button/alert_dialog_body.dart';
 
 class FloatingActionButtonBottomBar extends StatelessWidget {
   const FloatingActionButtonBottomBar({super.key});

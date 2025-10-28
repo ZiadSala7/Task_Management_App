@@ -16,7 +16,10 @@ class HomeViewBlocConsumer extends StatelessWidget {
         return state is EmptyState
             ? EmptyHomeViewBody()
             : HasStateHomeViewBody(
-                tasks: BlocProvider.of<TaskHandlerCubit>(context).tasks,
+                todayTasks: context.watch<TaskHandlerCubit>().todayTasks,
+                completedTasks: context
+                    .watch<TaskHandlerCubit>()
+                    .completedTasks,
               );
       },
       listener: (BuildContext context, state) {},

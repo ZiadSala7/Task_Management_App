@@ -6,8 +6,12 @@ import '../../../data/models/task_model.dart';
 import 'display_tasks_buttons_section.dart';
 
 class HasStateHomeViewBody extends StatelessWidget {
-  final List<TaskModel> tasks;
-  const HasStateHomeViewBody({super.key, required this.tasks});
+  final List<TaskModel> todayTasks, completedTasks;
+  const HasStateHomeViewBody({
+    super.key,
+    required this.todayTasks,
+    required this.completedTasks,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +26,10 @@ class HasStateHomeViewBody extends StatelessWidget {
             hasPrefix: true,
           ),
           SizedBox(height: 15),
-          DisplayTasksButtonsSection(tasks: tasks),
+          DisplayTasksButtonsSection(
+            todayTasks: todayTasks,
+            completedTasks: completedTasks,
+          ),
         ],
       ),
     );

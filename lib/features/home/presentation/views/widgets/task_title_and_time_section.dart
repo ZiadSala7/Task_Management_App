@@ -19,6 +19,7 @@ class TaskTitleAndTimeSection extends StatelessWidget {
         Text(
           task.taskTitle,
           style: AppTextStyles.bold19.copyWith(color: AppColors.white),
+          overflow: TextOverflow.ellipsis,
         ),
         Text(
           "Today at ${task.dateTimeNow.hour} : ${task.dateTimeNow.minute.toString().padLeft(2, '0')} ${task.pmOram}",

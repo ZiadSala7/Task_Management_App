@@ -27,7 +27,7 @@ class TaskCardDetails extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Expanded(flex: 1, child: CheckTaskCompletedButton()),
+            Expanded(flex: 1, child: CheckTaskCompletedButton(task: task)),
             Expanded(flex: 3, child: TaskTitleAndTimeSection(task: task)),
             Expanded(
               flex: 3,

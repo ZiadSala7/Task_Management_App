@@ -6,8 +6,12 @@ import 'display_list_of_tasks.dart';
 import 'elevated_button_display_list.dart';
 
 class DisplayTasksButtonsSection extends StatefulWidget {
-  final List<TaskModel> tasks;
-  const DisplayTasksButtonsSection({super.key, required this.tasks});
+  final List<TaskModel> todayTasks, completedTasks;
+  const DisplayTasksButtonsSection({
+    super.key,
+    required this.todayTasks,
+    required this.completedTasks,
+  });
 
   @override
   State<DisplayTasksButtonsSection> createState() =>
@@ -35,7 +39,10 @@ class _DisplayTasksButtonsSectionState
             title: S.of(context).today,
           ),
           isTodayVisible
-              ? DisplayListOfTasks(isVisible: isTodayVisible, widget: widget)
+              ? DisplayListOfTasks(
+                  isVisible: isTodayVisible,
+                  tasks: widget.todayTasks,
+                )
               : SizedBox(),
           ElevatedButtonIconDisplayList(
             isTodayVisible: isCompletedVisible,
@@ -49,7 +56,7 @@ class _DisplayTasksButtonsSectionState
           isCompletedVisible
               ? DisplayListOfTasks(
                   isVisible: isCompletedVisible,
-                  widget: widget,
+                  tasks: widget.completedTasks,
                 )
               : SizedBox(),
         ],

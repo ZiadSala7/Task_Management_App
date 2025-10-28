@@ -76,7 +76,6 @@ class AlertDialogBody extends StatelessWidget {
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
                     cubit.createAndAddTaskToList(dateTime);
-                    log(dateTime!.hour.toString());
                     Navigator.pop(context);
                   }
                 },

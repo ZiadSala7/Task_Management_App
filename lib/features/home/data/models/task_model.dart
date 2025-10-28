@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TaskModel {
+  bool isCompleted;
   final String taskTitle, taskDescription, catName, pmOram;
   final Color categoryClr;
   final DateTime? time;
@@ -14,5 +15,6 @@ class TaskModel {
     required this.time,
     required this.pmOram,
     required this.dateTimeNow,
+    this.isCompleted = false,
   });
 }

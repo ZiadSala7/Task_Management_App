@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-import 'display_tasks_buttons_section.dart';
+import '../../../data/models/task_model.dart';
 import 'task_card_details.dart';
 
 class DisplayListOfTasks extends StatelessWidget {
   const DisplayListOfTasks({
     super.key,
     required this.isVisible,
-    required this.widget,
+    required this.tasks,
   });
 
   final bool isVisible;
-  final DisplayTasksButtonsSection widget;
+  final List<TaskModel> tasks;
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +21,8 @@ class DisplayListOfTasks extends StatelessWidget {
         child: Column(
           children: isVisible
               ? List.generate(
-                  widget.tasks.length,
-                  (index) => TaskCardDetails(task: widget.tasks[index]),
+                  tasks.length,
+                  (index) => TaskCardDetails(task: tasks[index]),
                 )
               : List.empty(),
         ),

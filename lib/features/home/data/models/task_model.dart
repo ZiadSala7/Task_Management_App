@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class TaskModel {
   final String taskTitle, taskDescription, catName, pmOram;
   final Color categoryClr;
-  final DateTime time;
-  final TimeOfDay timeOfDay;
+  final DateTime? time;
+  final DateTime dateTimeNow;
 
   TaskModel({
     required this.taskTitle,
@@ -13,6 +13,6 @@ class TaskModel {
     required this.categoryClr,
     required this.time,
     required this.pmOram,
-    required this.timeOfDay,
+    required this.dateTimeNow,
   });
 }

@@ -6,11 +6,18 @@ import '../utils/app_colors.dart';
 class DialogTextField extends StatelessWidget {
   final String title;
   final Function(String)? onChanged;
-  const DialogTextField({super.key, this.onChanged, required this.title});
+  final String? Function(String?)? validator;
+  const DialogTextField({
+    super.key,
+    this.onChanged,
+    required this.title,
+    this.validator,
+  });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: validator,
       onChanged: onChanged,
       style: TextStyle(color: AppColors.white, fontSize: 20),
       decoration: InputDecoration(

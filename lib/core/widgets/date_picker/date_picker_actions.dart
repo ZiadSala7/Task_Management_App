@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../generated/l10n.dart';
+
 class DatePickerActions extends StatelessWidget {
   final VoidCallback onCancel;
   final VoidCallback onChooseTime;
@@ -27,8 +29,8 @@ class DatePickerActions extends StatelessWidget {
             ),
           ),
           onPressed: onChooseTime,
-          child: const Text(
-            "Choose Time",
+          child: Text(
+            S.of(context).chooseTime,
             style: TextStyle(color: Colors.white),
           ),
         ),

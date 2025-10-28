@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../../features/home/presentation/managers/task_cubit/task_handler_cubit.dart';
-import '../../utils/app_colors.dart';
 import '../timer_picker/custom_timer_picker.dart';
+import '../../utils/app_colors.dart';
 import 'date_picker_header.dart';
 import 'date_picker_calendar.dart';
 import 'date_picker_actions.dart';
 
 class CustomDatePickerDialog extends StatefulWidget {
-  final TaskHandlerCubit cubit;
-  const CustomDatePickerDialog({super.key, required this.cubit});
+  const CustomDatePickerDialog({super.key});
 
   @override
   State<CustomDatePickerDialog> createState() => _CustomDatePickerDialogState();
@@ -21,7 +19,6 @@ class _CustomDatePickerDialogState extends State<CustomDatePickerDialog> {
 
   @override
   Widget build(BuildContext context) {
-    widget.cubit.time = focusedDay;
     return Dialog(
       backgroundColor: const Color(0xFF2B2B2B),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -35,7 +32,6 @@ class _CustomDatePickerDialogState extends State<CustomDatePickerDialog> {
               onMonthChanged: (newDate) => setState(() => focusedDay = newDate),
               onYearPicked: (year) => setState(() {
                 focusedDay = DateTime(year, focusedDay.month);
-                widget.cubit.time = focusedDay;
               }),
             ),
             Divider(thickness: 0.5, color: AppColors.gray300),
@@ -47,19 +43,22 @@ class _CustomDatePickerDialogState extends State<CustomDatePickerDialog> {
                 setState(() {
                   selectedDay = selected;
                   focusedDay = focused;
-                  widget.cubit.time = focusedDay;
                 });
               },
             ),
             const SizedBox(height: 12),
             DatePickerActions(
-              onCancel: () => Navigator.pop(context, widget.cubit.time),
+              onCancel: () => Navigator.pop(context, focusedDay),
               onChooseTime: () async {
+                // return TimeOfDay if found
                 final data = await showDialog<TimeOfDay>(
                   context: context,
-                  builder: (_) => CustomTimePicker(cubit: widget.cubit),
+                  builder: (_) => CustomTimePicker(),
                 );
-                widget.cubit.timeOfDay = data;
+                // adding time to DateTime
+                focusedDay.add(
+                  Duration(hours: data!.hour, minutes: data.minute),
+                );
               },
             ),
           ],

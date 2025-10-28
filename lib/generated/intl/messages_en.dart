@@ -34,11 +34,21 @@ class MessageLookup extends MessageLookupByLibrary {
     "back": MessageLookupByLibrary.simpleMessage("Back"),
     "calendar": MessageLookupByLibrary.simpleMessage("Calendar"),
     "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+    "catClr": MessageLookupByLibrary.simpleMessage("Category color :"),
+    "catIcon": MessageLookupByLibrary.simpleMessage("Category Icon :"),
+    "catName": MessageLookupByLibrary.simpleMessage("Category name :"),
     "chooseCategory": MessageLookupByLibrary.simpleMessage("Choose Category"),
+    "chooseIcon": MessageLookupByLibrary.simpleMessage(
+      "Choose icon from library",
+    ),
     "chooseTime": MessageLookupByLibrary.simpleMessage("Choose Time"),
     "completed": MessageLookupByLibrary.simpleMessage("Completed"),
     "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "createAccount": MessageLookupByLibrary.simpleMessage("CREATE ACCOUNT"),
+    "createCatBtn": MessageLookupByLibrary.simpleMessage("Create Category"),
+    "createCategory": MessageLookupByLibrary.simpleMessage(
+      "Create new category",
+    ),
     "desc": MessageLookupByLibrary.simpleMessage("Description"),
     "doNotHave": MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
     "emptyHomeDesc": MessageLookupByLibrary.simpleMessage(

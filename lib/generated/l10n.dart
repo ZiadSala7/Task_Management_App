@@ -378,6 +378,51 @@ class S {
       args: [],
     );
   }
+
+  /// `Create new category`
+  String get createCategory {
+    return Intl.message(
+      'Create new category',
+      name: 'createCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Category name :`
+  String get catName {
+    return Intl.message('Category name :', name: 'catName', desc: '', args: []);
+  }
+
+  /// `Category Icon :`
+  String get catIcon {
+    return Intl.message('Category Icon :', name: 'catIcon', desc: '', args: []);
+  }
+
+  /// `Choose icon from library`
+  String get chooseIcon {
+    return Intl.message(
+      'Choose icon from library',
+      name: 'chooseIcon',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Category color :`
+  String get catClr {
+    return Intl.message('Category color :', name: 'catClr', desc: '', args: []);
+  }
+
+  /// `Create Category`
+  String get createCatBtn {
+    return Intl.message(
+      'Create Category',
+      name: 'createCatBtn',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

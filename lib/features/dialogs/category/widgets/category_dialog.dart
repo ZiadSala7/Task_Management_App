@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_management/core/widgets/custom_button.dart';
 import '../../../../generated/l10n.dart';
+import '../../../add_category/presentation/views/add_category_view.dart';
 import '../data/category_model.dart';
 import 'category_item.dart';
 
@@ -47,7 +48,9 @@ class CategoryDialog extends StatelessWidget {
               height: 65,
               width: double.infinity,
               child: CustomButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(AddCategoryView.id);
+                },
                 title: S.of(context).addCategory,
                 isActive: true,
               ),

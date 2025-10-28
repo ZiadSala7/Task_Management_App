@@ -42,5 +42,11 @@
     "cancel": "Cancel",
     "save": "Save",
     "addCategory": "Add Category",
-    "chooseCategory": "Choose Category"
+    "chooseCategory": "Choose Category",
+    "createCategory": "Create new category",
+    "catName": "Category name :",
+    "catIcon": "Category Icon :",
+    "chooseIcon": "Choose icon from library",
+    "catClr": "Category color :",
+    "createCatBtn": "Create Category"
 }

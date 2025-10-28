@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../features/add_category/presentation/views/add_category_view.dart';
 import '../../features/auth/presentation/views/login_view.dart';
 import '../../features/auth/presentation/views/register_view.dart';
 import '../widgets/build_navigation_bar.dart';
@@ -14,4 +15,5 @@ Map<String, WidgetBuilder> get allAppRoutes => {
   LoginView.id: (context) => const LoginView(),
   RegisterView.id: (context) => const RegisterView(),
   BuildNavigationBar.id: (context) => const BuildNavigationBar(),
+  AddCategoryView.id: (context) => const AddCategoryView(),
 };

@@ -5,6 +5,7 @@ import 'features/home/presentation/managers/task_cubit/task_handler_cubit.dart';
 import 'task_management_app.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     MultiBlocProvider(
       providers: [

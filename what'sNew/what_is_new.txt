@@ -1,0 +1,4 @@
+#packages:
+    - flutter_iconpicker:
+        cmd to create icons: dart run flutter_iconpicker:generate_packs --packs material,cupertino,fontAwesome
+    

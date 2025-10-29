@@ -11,15 +11,19 @@ class AddCategoryView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          S.of(context).createCategory,
-          style: AppTextStyles.bold19.copyWith(color: AppColors.white),
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      onPanDown: (_) => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            S.of(context).createCategory,
+            style: AppTextStyles.bold19.copyWith(color: AppColors.white),
+          ),
+          centerTitle: false,
         ),
-        centerTitle: false,
+        body: AddCategoryViewBody(),
       ),
-      body: AddCategoryViewBody(),
     );
   }
 }

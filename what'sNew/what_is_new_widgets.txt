@@ -1,0 +1,5 @@
+Widgets:
+    - SingleChildScrollView:
+        - to remove the keyboard while scrolling :
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+

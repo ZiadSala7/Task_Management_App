@@ -28,9 +28,10 @@ class _AddCategoryViewBodyState extends State<AddCategoryViewBody> {
         title: Text('Choose an Icon', style: AppTextStyles.bold23),
         iconPackModes: [
           IconPack.fontAwesomeIcons,
+          IconPack.cupertino,
           IconPack.material,
           IconPack.allMaterial,
-          IconPack.cupertino,
+          IconPack.lineAwesomeIcons
         ], // يمكنك إضافة FontAwesome أيضًا
         showSearchBar: true,
         adaptiveDialog: false,
@@ -50,7 +51,7 @@ class _AddCategoryViewBodyState extends State<AddCategoryViewBody> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: SingleChildScrollView(
-        // لإخفاء الكيبورد عند السحب
+        // to remove the keyboard while scrolling
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         child: Column(
           spacing: 16,

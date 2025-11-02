@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
 import '../../../home/data/models/task_model.dart';
@@ -12,7 +13,10 @@ class TaskDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: taskDeatilsAppBar(context),
-      body: TaskDetailsViewBody(taskModel: taskModel),
+      body: FadeInUp(
+        delay: Duration(milliseconds: 10),
+        child: TaskDetailsViewBody(taskModel: taskModel),
+      ),
     );
   }
 }

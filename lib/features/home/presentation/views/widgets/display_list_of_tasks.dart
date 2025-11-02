@@ -16,7 +16,6 @@ class DisplayListOfTasks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.sizeOf(context).height * 0.38,
       child: SingleChildScrollView(
         child: Column(
           children: isVisible

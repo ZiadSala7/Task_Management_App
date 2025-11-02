@@ -4,7 +4,7 @@ import '../helper/text_form_field_builder_border.dart';
 import '../utils/app_colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  final String title;
+  final String title, initVal;
   final Function(String)? onChanged;
   final bool hasPrefix;
   const CustomTextFormField({
@@ -12,12 +12,14 @@ class CustomTextFormField extends StatelessWidget {
     this.onChanged,
     required this.title,
     this.hasPrefix = false,
+    this.initVal = '',
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      onChanged: (value) {},
+      initialValue: initVal,
+      onChanged: onChanged,
       style: TextStyle(color: AppColors.white, fontSize: 20),
       decoration: InputDecoration(
         focusedBorder: textFormFieldFocusBorder(),

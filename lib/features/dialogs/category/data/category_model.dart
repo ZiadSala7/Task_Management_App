@@ -59,9 +59,4 @@ List<CategoryModel> categories = [
     icon: Icons.home,
     color: Colors.orangeAccent.shade200,
   ),
-  CategoryModel(
-    name: 'Create New',
-    icon: Icons.add,
-    color: Colors.tealAccent.shade400,
-  ),
 ];

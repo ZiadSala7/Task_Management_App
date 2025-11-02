@@ -423,6 +423,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Choose an Icon`
+  String get chooseAnIcon {
+    return Intl.message(
+      'Choose an Icon',
+      name: 'chooseAnIcon',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Check all fields and try again`
+  String get checkFields {
+    return Intl.message(
+      'Check all fields and try again',
+      name: 'checkFields',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Task Priority`
+  String get priority {
+    return Intl.message('Task Priority', name: 'priority', desc: '', args: []);
+  }
+
+  /// `Edit Task`
+  String get editTask {
+    return Intl.message('Edit Task', name: 'editTask', desc: '', args: []);
+  }
+
+  /// `Task Time:`
+  String get taskTime {
+    return Intl.message('Task Time:', name: 'taskTime', desc: '', args: []);
+  }
+
+  /// `Today at `
+  String get todayAt {
+    return Intl.message('Today at ', name: 'todayAt', desc: '', args: []);
+  }
+
+  /// `Task Category: `
+  String get taskCate {
+    return Intl.message(
+      'Task Category: ',
+      name: 'taskCate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Task Priority`
+  String get taskPrio {
+    return Intl.message('Task Priority', name: 'taskPrio', desc: '', args: []);
+  }
+
+  /// `Delete Task`
+  String get deleteTask {
+    return Intl.message('Delete Task', name: 'deleteTask', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

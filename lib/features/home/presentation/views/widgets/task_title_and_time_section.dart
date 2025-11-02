@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/app_text_styles.dart';
+import '../../../../../generated/l10n.dart';
 import '../../../data/models/task_model.dart';
 
 class TaskTitleAndTimeSection extends StatelessWidget {
@@ -22,7 +23,7 @@ class TaskTitleAndTimeSection extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
         Text(
-          "Today at ${task.dateTimeNow.hour} : ${task.dateTimeNow.minute.toString().padLeft(2, '0')} ${task.pmOram}",
+          "${S.of(context).todayAt} ${task.dateTimeNow.hour} : ${task.dateTimeNow.minute.toString().padLeft(2, '0')} ${task.pmOram}",
           style: AppTextStyles.regular16.copyWith(color: AppColors.gray300),
         ),
       ],

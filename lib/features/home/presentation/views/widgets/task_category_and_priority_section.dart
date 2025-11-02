@@ -20,14 +20,14 @@ class TaskCategoryAndPrioritySection extends StatelessWidget {
           margin: EdgeInsets.only(bottom: 5),
           padding: EdgeInsets.all(6),
           decoration: BoxDecoration(
-            color: task.categoryClr,
+            color: task.categoryModel.color,
             borderRadius: BorderRadius.circular(4),
           ),
           child: Row(
             children: [
-              Icon(Icons.home, size: 15),
+              Icon(task.categoryModel.icon, size: 15),
               Text(
-                task.catName,
+                " ${task.categoryModel.name}",
                 style: AppTextStyles.regular16.copyWith(color: AppColors.white),
               ),
             ],
@@ -44,7 +44,7 @@ class TaskCategoryAndPrioritySection extends StatelessWidget {
             children: [
               Icon(Icons.flag, size: 12),
               Text(
-                '1',
+                task.taskPriority.toString(),
                 style: AppTextStyles.regular16.copyWith(color: AppColors.white),
               ),
             ],

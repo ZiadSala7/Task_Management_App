@@ -4,7 +4,8 @@ import '../../../../../core/utils/app_colors.dart';
 import 'color_choosen_widget.dart';
 
 class CategoryColorChooser extends StatefulWidget {
-  const CategoryColorChooser({super.key});
+  final Function(Color) onChange;
+  const CategoryColorChooser({super.key, required this.onChange});
 
   @override
   State<CategoryColorChooser> createState() => _CategoryColorChooserState();
@@ -28,6 +29,7 @@ class _CategoryColorChooserState extends State<CategoryColorChooser> {
                 onTap: () {
                   setState(() {
                     choosenClr = AppColors.allAppColors[index];
+                    widget.onChange(choosenClr);
                     currentIndex = index;
                   });
                 },

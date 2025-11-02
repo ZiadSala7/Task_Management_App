@@ -11,3 +11,5 @@ final List<Widget> pages = const [
   Text('Focus'),
   Text('Profile'),
 ];
+
+int taskPriority = 1;

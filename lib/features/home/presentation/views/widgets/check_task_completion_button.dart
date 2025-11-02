@@ -32,8 +32,8 @@ class _CheckTaskCompletedButtonState extends State<CheckTaskCompletedButton> {
           });
         },
         icon: widget.task.isCompleted
-            ? Icon(Icons.circle_rounded, color: AppColors.softPurple)
-            : Icon(Icons.circle_outlined),
+            ? Icon(Icons.radio_button_checked, color: AppColors.softPurple)
+            : Icon(Icons.radio_button_unchecked),
       ),
     );
   }

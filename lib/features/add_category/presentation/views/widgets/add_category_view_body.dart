@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_iconpicker/Models/configuration.dart';
 import 'package:flutter_iconpicker/flutter_iconpicker.dart';
+import 'package:task_management/features/dialogs/category/data/category_model.dart';
 
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
@@ -10,6 +10,7 @@ import 'category_color_chooser.dart';
 import 'category_icon_chooser.dart';
 import 'create_or_cancel_category_button.dart';
 import 'display_choosen_icon.dart';
+import 'single_picker_configuration_method.dart';
 
 class AddCategoryViewBody extends StatefulWidget {
   const AddCategoryViewBody({super.key});
@@ -20,23 +21,13 @@ class AddCategoryViewBody extends StatefulWidget {
 
 class _AddCategoryViewBodyState extends State<AddCategoryViewBody> {
   IconData? selectedIcon;
+  String catName = '';
+  Color selectedColor = AppColors.allAppColors[0];
 
   Future<void> pickIcon() async {
     final iconPickerIcon = await showIconPicker(
       context,
-      configuration: const SinglePickerConfiguration(
-        title: Text('Choose an Icon', style: AppTextStyles.bold23),
-        iconPackModes: [
-          IconPack.fontAwesomeIcons,
-          IconPack.cupertino,
-          IconPack.material,
-          IconPack.allMaterial,
-          IconPack.lineAwesomeIcons
-        ], // يمكنك إضافة FontAwesome أيضًا
-        showSearchBar: true,
-        adaptiveDialog: false,
-        backgroundColor: AppColors.bottomNavClr,
-      ),
+      configuration: singlePickerConfigurationMethod(context),
     );
 
     if (iconPickerIcon != null) {
@@ -61,19 +52,32 @@ class _AddCategoryViewBodyState extends State<AddCategoryViewBody> {
             Text(S.of(context).catName, style: AppTextStyles.regular18),
             CustomTextFormField(
               title: S.of(context).catName,
-              onChanged: (value) {},
+              onChanged: (value) {
+                catName = value;
+              },
             ),
-
             Text(S.of(context).catIcon, style: AppTextStyles.regular18),
-            // 👇 هنا نعرض الأيقونة المختارة أو زر الإضافة
+            // for the choosenIcon to choose and display
             selectedIcon != null
                 ? DisplayChoosenIcon(onTap: pickIcon, icon: selectedIcon!)
                 : CategoryIconChooser(onPressed: pickIcon),
 
             Text(S.of(context).catClr, style: AppTextStyles.regular18),
-            const CategoryColorChooser(),
+            CategoryColorChooser(
+              onChange: (Color color) {
+                selectedColor = color;
+              },
+            ),
             const SizedBox(height: 270),
-            const CreateOrCancelCategoryButtons(),
+            CreateOrCancelCategoryButtons(
+              model: selectedIcon != null && catName != ''
+                  ? CategoryModel(
+                      name: catName,
+                      icon: selectedIcon!,
+                      color: selectedColor,
+                    )
+                  : null,
+            ),
             const SizedBox(height: 15),
           ],
         ),

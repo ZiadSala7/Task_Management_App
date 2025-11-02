@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_management/features/task/presentation/views/task_details_view.dart';
 
 import '../../../../../core/utils/app_colors.dart';
 import '../../../data/models/task_model.dart';
@@ -12,18 +13,21 @@ class TaskCardDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        // from here we will navigate to the task details view
-        // we can go and edit or delete task
-      },
-      child: Container(
-        height: 90,
-        decoration: BoxDecoration(
-          color: AppColors.bottomNavClr,
-          borderRadius: BorderRadius.circular(8),
-        ),
-        margin: EdgeInsets.only(bottom: 15),
+    return Container(
+      height: 90,
+      decoration: BoxDecoration(
+        color: AppColors.bottomNavClr,
+        borderRadius: BorderRadius.circular(8),
+      ),
+      margin: EdgeInsets.only(bottom: 15),
+      child: InkWell(
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => TaskDetailsView(taskModel: task),
+            ),
+          );
+        },
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [

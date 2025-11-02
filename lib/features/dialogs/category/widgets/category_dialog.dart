@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:task_management/core/widgets/custom_button.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../generated/l10n.dart';
-import '../../../add_category/presentation/views/add_category_view.dart';
+import '../../../add_category/presentation/managers/cubit/category_cubit/category_cubit.dart';
+import '../../../add_category/presentation/managers/cubit/category_cubit/category_states.dart';
 import '../data/category_model.dart';
+import 'add_category_dialog_button.dart';
 import 'category_item.dart';
 
 class CategoryDialog extends StatelessWidget {
@@ -10,54 +13,56 @@ class CategoryDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Dialog(
-      backgroundColor: const Color(0xFF2E2E2E),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Text(
-              "Choose Category",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 16,
-              ),
+    return BlocConsumer<CategoryCubit, CategoryStates>(
+      listener: (context, state) {},
+      builder: (context, state) {
+        return Dialog(
+          backgroundColor: const Color(0xFF2E2E2E),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  S.of(context).chooseCategory,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                ),
+                const Divider(color: Colors.white24, height: 20),
+                GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    crossAxisSpacing: 12,
+                    mainAxisSpacing: 16,
+                  ),
+                  itemCount: categories.length,
+                  itemBuilder: (context, index) {
+                    return CategoryItem(
+                      category: categories[index],
+                      onTap: () {
+                        context.read<CategoryCubit>().initCategory(
+                          categories[index],
+                        );
+                        Navigator.of(context).pop();
+                      },
+                    );
+                  },
+                ),
+                const SizedBox(height: 20),
+                AddCategoryDialogButton(),
+              ],
             ),
-            const Divider(color: Colors.white24, height: 20),
-            GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                crossAxisSpacing: 12,
-                mainAxisSpacing: 16,
-              ),
-              itemCount: categories.length,
-              itemBuilder: (context, index) {
-                return CategoryItem(
-                  category: categories[index],
-                  onTap: () => Navigator.pop(context, categories[index]),
-                );
-              },
-            ),
-            const SizedBox(height: 20),
-            SizedBox(
-              height: 65,
-              width: double.infinity,
-              child: CustomButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed(AddCategoryView.id);
-                },
-                title: S.of(context).addCategory,
-                isActive: true,
-              ),
-            ),
-          ],
-        ),
-      ),
+          ),
+        );
+      },
     );
   }
 }

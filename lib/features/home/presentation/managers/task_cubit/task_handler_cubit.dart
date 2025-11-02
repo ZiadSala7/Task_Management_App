@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:task_management/core/utils/app_colors.dart';
 
+import '../../../../dialogs/category/data/category_model.dart';
 import '../../../data/models/task_model.dart';
 import 'task_handler_states.dart';
 
@@ -17,17 +17,24 @@ class TaskHandlerCubit extends Cubit<TaskHandlerStates> {
     );
   }
 
-  createAndAddTaskToList(DateTime? time) {
+  createAndAddTaskToList(
+    DateTime? time,
+    CategoryModel? categoryModel,
+    int taskPriority,
+  ) {
     time = time ?? DateTime.now();
+    categoryModel = categoryModel ?? categories[4];
     TaskModel model = TaskModel(
       taskTitle: taskTitle,
       taskDescription: taskDesc,
       catName: catName,
-      categoryClr: AppColors.softPurple,
       time: time,
       pmOram: time.hour < 12 || time.hour == 24 ? 'AM' : 'PM',
       dateTimeNow: DateTime.now(),
+      categoryModel: categoryModel,
+      taskPriority: taskPriority,
     );
+    taskTitle = taskDesc = "";
     addTaskToList(model);
   }
 

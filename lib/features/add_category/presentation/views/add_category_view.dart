@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/add_category_view_body.dart';
 import '../../../../core/utils/app_text_styles.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../generated/l10n.dart';
+import 'widgets/add_cat_bloc_consumer.dart';
 
 class AddCategoryView extends StatelessWidget {
   static const String id = 'addCatView';
@@ -22,7 +22,7 @@ class AddCategoryView extends StatelessWidget {
           ),
           centerTitle: false,
         ),
-        body: AddCategoryViewBody(),
+        body: AddCatBlocConsumer(),
       ),
     );
   }

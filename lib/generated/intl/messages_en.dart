@@ -37,6 +37,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "catClr": MessageLookupByLibrary.simpleMessage("Category color :"),
     "catIcon": MessageLookupByLibrary.simpleMessage("Category Icon :"),
     "catName": MessageLookupByLibrary.simpleMessage("Category name :"),
+    "checkFields": MessageLookupByLibrary.simpleMessage(
+      "Check all fields and try again",
+    ),
+    "chooseAnIcon": MessageLookupByLibrary.simpleMessage("Choose an Icon"),
     "chooseCategory": MessageLookupByLibrary.simpleMessage("Choose Category"),
     "chooseIcon": MessageLookupByLibrary.simpleMessage(
       "Choose icon from library",
@@ -49,8 +53,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "createCategory": MessageLookupByLibrary.simpleMessage(
       "Create new category",
     ),
+    "deleteTask": MessageLookupByLibrary.simpleMessage("Delete Task"),
     "desc": MessageLookupByLibrary.simpleMessage("Description"),
     "doNotHave": MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
+    "editTask": MessageLookupByLibrary.simpleMessage("Edit Task"),
     "emptyHomeDesc": MessageLookupByLibrary.simpleMessage(
       "Tap + to add your tasks",
     ),
@@ -75,6 +81,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "oneOnTitle": MessageLookupByLibrary.simpleMessage("Manage your tasks"),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "priority": MessageLookupByLibrary.simpleMessage("Task Priority"),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "register": MessageLookupByLibrary.simpleMessage("Register"),
     "save": MessageLookupByLibrary.simpleMessage("Save"),
@@ -82,6 +89,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Search for your task...",
     ),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "taskCate": MessageLookupByLibrary.simpleMessage("Task Category: "),
+    "taskPrio": MessageLookupByLibrary.simpleMessage("Task Priority"),
+    "taskTime": MessageLookupByLibrary.simpleMessage("Task Time:"),
     "taskaty": MessageLookupByLibrary.simpleMessage("Your Tasks"),
     "threeOnDesc": MessageLookupByLibrary.simpleMessage(
       "You can organize your daily tasks by \nadding your tasks into separate categories",
@@ -89,6 +99,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "threeOnTitle": MessageLookupByLibrary.simpleMessage("Organize your tasks"),
     "titleTask": MessageLookupByLibrary.simpleMessage("Write your task here"),
     "today": MessageLookupByLibrary.simpleMessage("Today"),
+    "todayAt": MessageLookupByLibrary.simpleMessage("Today at "),
     "twoOnDesc": MessageLookupByLibrary.simpleMessage(
       "In Uptodo  you can create your \npersonalized routine to stay productive",
     ),

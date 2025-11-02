@@ -48,5 +48,14 @@
     "catIcon": "Category Icon :",
     "chooseIcon": "Choose icon from library",
     "catClr": "Category color :",
-    "createCatBtn": "Create Category"
+    "createCatBtn": "Create Category",
+    "chooseAnIcon": "Choose an Icon",
+    "checkFields": "Check all fields and try again",
+    "priority": "Task Priority",
+    "editTask": "Edit Task",
+    "taskTime": "Task Time:",
+    "todayAt": "Today at ",
+    "taskCate": "Task Category: ",
+    "taskPrio": "Task Priority",
+    "deleteTask": "Delete Task"
 }

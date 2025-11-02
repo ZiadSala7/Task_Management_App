@@ -20,14 +20,12 @@ class TaskDetailItems extends StatelessWidget {
           value:
               "${S.of(context).todayAt} ${taskModel.dateTimeNow.hour} : ${taskModel.dateTimeNow.minute.toString().padLeft(2, '0')} ${taskModel.pmOram}",
         ),
-        const SizedBox(height: 30),
         TaskDetailItem(
           icon: Icons.category_outlined,
           title: S.of(context).taskCate,
           value: taskModel.categoryModel.name,
           iconValue: taskModel.categoryModel.icon,
         ),
-        const SizedBox(height: 30),
         TaskDetailItem(
           icon: Icons.flag_outlined,
           title: S.of(context).taskPrio,

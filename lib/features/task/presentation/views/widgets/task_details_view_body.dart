@@ -23,7 +23,7 @@ class TaskDetailsViewBody extends StatelessWidget {
           // Details
           SizedBox(height: 50),
           TaskDetailItems(taskModel: taskModel),
-          const DeleteTaskButton(),
+          DeleteTaskButton(taskModel: taskModel),
           const Spacer(),
           // Edit button
           Column(

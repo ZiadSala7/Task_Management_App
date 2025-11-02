@@ -22,8 +22,11 @@ class TaskHandlerCubit extends Cubit<TaskHandlerStates> {
     CategoryModel? categoryModel,
     int taskPriority,
   ) {
+    // check the time first
     time = time ?? DateTime.now();
+    // and check category model, too
     categoryModel = categoryModel ?? categories[4];
+    // now we will create the model
     TaskModel model = TaskModel(
       taskTitle: taskTitle,
       taskDescription: taskDesc,
@@ -34,7 +37,9 @@ class TaskHandlerCubit extends Cubit<TaskHandlerStates> {
       categoryModel: categoryModel,
       taskPriority: taskPriority,
     );
+    // reset task title and task description
     taskTitle = taskDesc = "";
+    // now we will add the task to the list
     addTaskToList(model);
   }
 
@@ -47,8 +52,9 @@ class TaskHandlerCubit extends Cubit<TaskHandlerStates> {
 
   deleteTask(TaskModel task) {
     // we will recieve a model to delete it from databse
-    todayTasks.remove(task);
+    task.isCompleted ? completedTasks.remove(task) : todayTasks.remove(task);
     // now we will init list again
+    initList();
   }
 
   addTaskToCompleted(TaskModel task) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
+import '../../generated/l10n.dart';
 import '../utils/app_colors.dart';
 import 'floating_action_button_bottom_bar.dart';
 
@@ -33,11 +34,11 @@ class _BuildNavigationBarState extends State<BuildNavigationBar> {
 
   List<Widget> get _buildNavItemRowList {
     return [
-      _buildNavItem(Icons.home, 'Home', 0),
-      _buildNavItem(Icons.calendar_month, 'Calendar', 1),
+      _buildNavItem(Icons.home, S.of(context).home, 0),
+      _buildNavItem(Icons.calendar_month, S.of(context).calendar, 1),
       const SizedBox(width: 40), // space for FAB
-      _buildNavItem(Icons.access_time, 'Focus', 2),
-      _buildNavItem(Icons.person_outline_sharp, 'Profile', 3),
+      _buildNavItem(Icons.access_time, S.of(context).focus, 2),
+      _buildNavItem(Icons.person_outline_sharp, S.of(context).profile, 3),
     ];
   }
 

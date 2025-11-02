@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../generated/l10n.dart';
 import '../../../data/models/task_model.dart';
+import '../search_view.dart';
 import 'display_tasks_buttons_section.dart';
 
 class HasStateHomeViewBody extends StatelessWidget {
@@ -21,9 +22,14 @@ class HasStateHomeViewBody extends StatelessWidget {
       width: double.infinity,
       child: ListView(
         children: [
-          CustomTextFormField(
-            title: S.of(context).searchForTask,
-            hasPrefix: true,
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushNamed(SearchView.id);
+            },
+            child: CustomTextFormField(
+              title: S.of(context).searchForTask,
+              hasPrefix: true,
+            ),
           ),
           SizedBox(height: 15),
           DisplayTasksButtonsSection(

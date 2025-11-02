@@ -57,5 +57,19 @@
     "todayAt": "Today at ",
     "taskCate": "Task Category: ",
     "taskPrio": "Task Priority",
-    "deleteTask": "Delete Task"
+    "deleteTask": "Delete Task",
+    "taskDone": "Tasks Done",
+    "taskLeft": "Tasks Left",
+    "settings": "Settings",
+    "appsettings": "App Settings",
+    "changeAccName": "Change account name",
+    "changeAccPass": "Change account password",
+    "changeAccImg": "Change account image",
+    "aboutUs": "About US",
+    "faq": "FAQ",
+    "helpAndFeed": "Help & Feedback",
+    "supportUs": "Support US",
+    "logOut": "Log Out",
+    "acc": "Account",
+    "upTodo": "UpTodo"
 }

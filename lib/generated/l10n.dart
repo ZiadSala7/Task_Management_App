@@ -483,6 +483,101 @@ class S {
   String get deleteTask {
     return Intl.message('Delete Task', name: 'deleteTask', desc: '', args: []);
   }
+
+  /// `Tasks Done`
+  String get taskDone {
+    return Intl.message('Tasks Done', name: 'taskDone', desc: '', args: []);
+  }
+
+  /// `Tasks Left`
+  String get taskLeft {
+    return Intl.message('Tasks Left', name: 'taskLeft', desc: '', args: []);
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message('Settings', name: 'settings', desc: '', args: []);
+  }
+
+  /// `App Settings`
+  String get appsettings {
+    return Intl.message(
+      'App Settings',
+      name: 'appsettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change account name`
+  String get changeAccName {
+    return Intl.message(
+      'Change account name',
+      name: 'changeAccName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change account password`
+  String get changeAccPass {
+    return Intl.message(
+      'Change account password',
+      name: 'changeAccPass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change account image`
+  String get changeAccImg {
+    return Intl.message(
+      'Change account image',
+      name: 'changeAccImg',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About US`
+  String get aboutUs {
+    return Intl.message('About US', name: 'aboutUs', desc: '', args: []);
+  }
+
+  /// `FAQ`
+  String get faq {
+    return Intl.message('FAQ', name: 'faq', desc: '', args: []);
+  }
+
+  /// `Help & Feedback`
+  String get helpAndFeed {
+    return Intl.message(
+      'Help & Feedback',
+      name: 'helpAndFeed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Support US`
+  String get supportUs {
+    return Intl.message('Support US', name: 'supportUs', desc: '', args: []);
+  }
+
+  /// `Log Out`
+  String get logOut {
+    return Intl.message('Log Out', name: 'logOut', desc: '', args: []);
+  }
+
+  /// `Account`
+  String get acc {
+    return Intl.message('Account', name: 'acc', desc: '', args: []);
+  }
+
+  /// `UpTodo`
+  String get upTodo {
+    return Intl.message('UpTodo', name: 'upTodo', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -23,8 +23,11 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "HaveAcc": MessageLookupByLibrary.simpleMessage("Already have an account?"),
+    "aboutUs": MessageLookupByLibrary.simpleMessage("About US"),
+    "acc": MessageLookupByLibrary.simpleMessage("Account"),
     "addCategory": MessageLookupByLibrary.simpleMessage("Add Category"),
     "addTask": MessageLookupByLibrary.simpleMessage("Add Task"),
+    "appsettings": MessageLookupByLibrary.simpleMessage("App Settings"),
     "authChooserDesc": MessageLookupByLibrary.simpleMessage(
       "Please login to your account or create \nnew account to continue",
     ),
@@ -37,6 +40,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "catClr": MessageLookupByLibrary.simpleMessage("Category color :"),
     "catIcon": MessageLookupByLibrary.simpleMessage("Category Icon :"),
     "catName": MessageLookupByLibrary.simpleMessage("Category name :"),
+    "changeAccImg": MessageLookupByLibrary.simpleMessage(
+      "Change account image",
+    ),
+    "changeAccName": MessageLookupByLibrary.simpleMessage(
+      "Change account name",
+    ),
+    "changeAccPass": MessageLookupByLibrary.simpleMessage(
+      "Change account password",
+    ),
     "checkFields": MessageLookupByLibrary.simpleMessage(
       "Check all fields and try again",
     ),
@@ -67,9 +79,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterUsername": MessageLookupByLibrary.simpleMessage(
       "Enter Your Username",
     ),
+    "faq": MessageLookupByLibrary.simpleMessage("FAQ"),
     "focus": MessageLookupByLibrary.simpleMessage("Focus"),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "helpAndFeed": MessageLookupByLibrary.simpleMessage("Help & Feedback"),
     "home": MessageLookupByLibrary.simpleMessage("Home"),
+    "logOut": MessageLookupByLibrary.simpleMessage("Log Out"),
     "logWithApple": MessageLookupByLibrary.simpleMessage("Login with Apple"),
     "logWithGoogle": MessageLookupByLibrary.simpleMessage("Login with Google"),
     "login": MessageLookupByLibrary.simpleMessage("LOGIN"),
@@ -88,8 +103,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "searchForTask": MessageLookupByLibrary.simpleMessage(
       "Search for your task...",
     ),
+    "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "supportUs": MessageLookupByLibrary.simpleMessage("Support US"),
     "taskCate": MessageLookupByLibrary.simpleMessage("Task Category: "),
+    "taskDone": MessageLookupByLibrary.simpleMessage("Tasks Done"),
+    "taskLeft": MessageLookupByLibrary.simpleMessage("Tasks Left"),
     "taskPrio": MessageLookupByLibrary.simpleMessage("Task Priority"),
     "taskTime": MessageLookupByLibrary.simpleMessage("Task Time:"),
     "taskaty": MessageLookupByLibrary.simpleMessage("Your Tasks"),
@@ -104,6 +123,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "In Uptodo  you can create your \npersonalized routine to stay productive",
     ),
     "twoOnTitle": MessageLookupByLibrary.simpleMessage("Create daily routine"),
+    "upTodo": MessageLookupByLibrary.simpleMessage("UpTodo"),
     "userName": MessageLookupByLibrary.simpleMessage("Username"),
   };
 }

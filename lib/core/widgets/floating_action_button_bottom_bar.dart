@@ -20,7 +20,7 @@ class FloatingActionButtonBottomBar extends StatelessWidget {
             backgroundColor: AppColors.bottomNavClr,
             insetPadding: EdgeInsets.zero,
             constraints: BoxConstraints.expand(
-              height: MediaQuery.sizeOf(context).height * 0.37,
+              height: MediaQuery.sizeOf(context).height * 0.4,
               width: MediaQuery.sizeOf(context).width,
             ),
           ),

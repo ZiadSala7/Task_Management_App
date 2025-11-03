@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.0"
+  animation_list:
+    dependency: "direct main"
+    description:
+      name: animation_list
+      sha256: "5d193f53a6616dc6496eb7eff297da84a6f18c1c042412bbfe05dfc8be7be926"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.0"
   archive:
     dependency: transitive
     description:
@@ -267,6 +275,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_staggered_animations:
+    dependency: "direct main"
+    description:
+      name: flutter_staggered_animations
+      sha256: "81d3c816c9bb0dca9e8a5d5454610e21ffb068aedb2bde49d2f8d04f75538351"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter

@@ -37,10 +37,11 @@ Row tagsFlagsAndTimeChooserButtons(
             icon: Icon(Icons.timer_outlined),
           ),
           IconButton(
-            onPressed: () {
-              Navigator.of(
-                context,
-              ).push(MaterialPageRoute(builder: (context) => PriorityDialog()));
+            onPressed: () async {
+              await showDialog(
+                context: Navigator.of(context, rootNavigator: true).context,
+                builder: (_) => PriorityDialog(),
+              );
             },
             icon: Icon(Icons.flag, color: AppColors.primaryIndigo),
           ),

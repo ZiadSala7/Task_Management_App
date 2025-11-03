@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../../generated/l10n.dart';
 import '../../../../home/data/models/task_model.dart';
@@ -11,14 +12,16 @@ class TaskDetailItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final formatted = DateFormat(
+      'hh:mm a',
+    ).format(taskModel.dateTimeNow); // مثال: 07:45 PM
     return Column(
       spacing: 30,
       children: [
         TaskDetailItem(
           icon: Icons.access_time,
           title: S.of(context).taskTime,
-          value:
-              "${S.of(context).todayAt} ${taskModel.dateTimeNow.hour} : ${taskModel.dateTimeNow.minute.toString().padLeft(2, '0')} ${taskModel.pmOram}",
+          value: "${S.of(context).todayAt} $formatted",
         ),
         TaskDetailItem(
           icon: Icons.category_outlined,

@@ -3,3 +3,11 @@ Widgets:
         - to remove the keyboard while scrolling :
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
 
+    // because of the errors happens by setState
+    // Calling setState() within the build() itself (or in a function called during the build process) is prohibited because Flutter is still building the widgets at that time.
+    - WidgetsBinding.instance.addPostFrameCallback((_) {
+          onDateChanged(date);
+        });
+      },
+    );
+

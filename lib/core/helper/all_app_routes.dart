@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../features/add_category/presentation/views/add_category_view.dart';
 import '../../features/auth/presentation/views/login_view.dart';
 import '../../features/auth/presentation/views/register_view.dart';
+import '../../features/calendar/presentation/views/calendar_view.dart';
 import '../../features/home/presentation/views/search_view.dart';
 import '../../features/profile/presentation/views/profile_view.dart';
 import '../widgets/build_navigation_bar.dart';
@@ -19,5 +20,6 @@ Map<String, WidgetBuilder> get allAppRoutes => {
   BuildNavigationBar.id: (context) => const BuildNavigationBar(),
   AddCategoryView.id: (context) => const AddCategoryView(),
   SearchView.id: (context) => const SearchView(),
-  ProfileView.id : (context) => const ProfileView()
+  ProfileView.id: (context) => const ProfileView(),
+  CalendarView.id: (context) => const CalendarView(),
 };

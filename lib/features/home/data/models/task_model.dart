@@ -2,7 +2,7 @@ import '../../../dialogs/category/data/category_model.dart';
 
 class TaskModel {
   bool isCompleted;
-  final String taskTitle, taskDescription, catName, pmOram;
+  final String taskTitle, taskDescription;
   final DateTime? time;
   final DateTime dateTimeNow;
   final CategoryModel categoryModel;
@@ -11,9 +11,7 @@ class TaskModel {
   TaskModel({
     required this.taskTitle,
     required this.taskDescription,
-    required this.catName,
     required this.time,
-    required this.pmOram,
     required this.dateTimeNow,
     this.isCompleted = false,
     required this.categoryModel,

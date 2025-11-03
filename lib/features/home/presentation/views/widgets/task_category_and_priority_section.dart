@@ -12,29 +12,10 @@ class TaskCategoryAndPrioritySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      spacing: 12,
-      mainAxisAlignment: MainAxisAlignment.end,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      spacing: 15,
       children: [
         Container(
-          margin: EdgeInsets.only(bottom: 5),
-          padding: EdgeInsets.all(6),
-          decoration: BoxDecoration(
-            color: task.categoryModel.color,
-            borderRadius: BorderRadius.circular(4),
-          ),
-          child: Row(
-            children: [
-              Icon(task.categoryModel.icon, size: 15),
-              Text(
-                " ${task.categoryModel.name}",
-                style: AppTextStyles.regular16.copyWith(color: AppColors.white),
-              ),
-            ],
-          ),
-        ),
-        Container(
-          margin: EdgeInsets.only(bottom: 5, right: 5),
+          margin: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
           padding: EdgeInsets.all(6),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(4),
@@ -45,6 +26,23 @@ class TaskCategoryAndPrioritySection extends StatelessWidget {
               Icon(Icons.flag, size: 12),
               Text(
                 task.taskPriority.toString(),
+                style: AppTextStyles.regular16.copyWith(color: AppColors.white),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+          padding: EdgeInsets.all(6),
+          decoration: BoxDecoration(
+            color: task.categoryModel.color,
+            borderRadius: BorderRadius.circular(4),
+          ),
+          child: Row(
+            children: [
+              Icon(task.categoryModel.icon, size: 15),
+              Text(
+                " ${task.categoryModel.name}",
                 style: AppTextStyles.regular16.copyWith(color: AppColors.white),
               ),
             ],

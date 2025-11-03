@@ -30,9 +30,7 @@ class TaskHandlerCubit extends Cubit<TaskHandlerStates> {
     TaskModel model = TaskModel(
       taskTitle: taskTitle,
       taskDescription: taskDesc,
-      catName: catName,
       time: time,
-      pmOram: time.hour < 12 || time.hour == 24 ? 'AM' : 'PM',
       dateTimeNow: DateTime.now(),
       categoryModel: categoryModel,
       taskPriority: taskPriority,

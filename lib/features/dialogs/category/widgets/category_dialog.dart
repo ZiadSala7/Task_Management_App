@@ -35,26 +35,29 @@ class CategoryDialog extends StatelessWidget {
                   ),
                 ),
                 const Divider(color: Colors.white24, height: 20),
-                GridView.builder(
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 16,
+                Flexible(
+                  child: GridView.builder(
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 3,
+                          crossAxisSpacing: 12,
+                          mainAxisSpacing: 16,
+                        ),
+                    itemCount: categories.length,
+                    itemBuilder: (context, index) {
+                      return CategoryItem(
+                        category: categories[index],
+                        onTap: () {
+                          context.read<CategoryCubit>().initCategory(
+                            categories[index],
+                          );
+                          Navigator.of(context).pop();
+                        },
+                      );
+                    },
                   ),
-                  itemCount: categories.length,
-                  itemBuilder: (context, index) {
-                    return CategoryItem(
-                      category: categories[index],
-                      onTap: () {
-                        context.read<CategoryCubit>().initCategory(
-                          categories[index],
-                        );
-                        Navigator.of(context).pop();
-                      },
-                    );
-                  },
                 ),
                 const SizedBox(height: 20),
                 AddCategoryDialogButton(),

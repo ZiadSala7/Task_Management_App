@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/app_colors.dart';
@@ -11,16 +12,18 @@ class ProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      appBar: AppBar(
-        title: Text(
-          S.of(context).profile,
-          style: AppTextStyles.bold19.copyWith(color: AppColors.white),
+    return FadeIn(
+      delay: Duration(milliseconds: 300),
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            S.of(context).profile,
+            style: AppTextStyles.bold19.copyWith(color: AppColors.white),
+          ),
+          centerTitle: true,
         ),
-        centerTitle: true,
+        body: ProfileViewBody(),
       ),
-      body: ProfileViewBody(),
-      
     );
   }
 }

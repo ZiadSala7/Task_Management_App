@@ -2,3 +2,13 @@
     - flutter_iconpicker:
         cmd to create icons: dart run flutter_iconpicker:generate_packs --packs material,cupertino,fontAwesome
     
+    - flutter_staggered_animations: 
+        for animation for the list in appears
+        return AnimationConfiguration.staggeredList(
+            position: index,
+            duration: const Duration(milliseconds: 400),
+            child: SlideAnimation(
+              verticalOffset: 50.0,
+              child: FadeInAnimation(child: TaskCardDetails(task: task)),
+            ),
+        );

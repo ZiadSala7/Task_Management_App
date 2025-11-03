@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -31,39 +32,42 @@ class _CalendarViewState extends State<CalendarView> {
   @override
   Widget build(BuildContext context) {
     var cubit = context.watch<TaskHandlerCubit>();
-    return Scaffold(
-      backgroundColor: const Color(0xff1c1c1e),
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          S.of(context).calendar,
-          style: const TextStyle(color: Colors.white, fontSize: 22),
+    return FadeIn(
+      delay: Duration(milliseconds: 300),
+      child: Scaffold(
+        backgroundColor: const Color(0xff1c1c1e),
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            S.of(context).calendar,
+            style: const TextStyle(color: Colors.white, fontSize: 22),
+          ),
         ),
-      ),
-      body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 10),
-        color: AppColors.white60,
-        width: double.infinity,
-        child: ListView(
-          children: [
-            CalendarHeader(
-              selectedDate: _selectedDate,
-              onDateChanged: _onDateChanged,
-            ),
-            CalendarSwitchButtons(
-              switchValue: switchValue,
-              onSwitchChanged: _onSwitchChanged,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: DisplayListOfTasks(
-                isVisible: true,
-                tasks: switchValue == 1
-                    ? cubit.todayTasks
-                    : cubit.completedTasks,
+        body: Container(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          color: AppColors.white60,
+          width: double.infinity,
+          child: ListView(
+            children: [
+              CalendarHeader(
+                selectedDate: _selectedDate,
+                onDateChanged: _onDateChanged,
               ),
-            ),
-          ],
+              CalendarSwitchButtons(
+                switchValue: switchValue,
+                onSwitchChanged: _onSwitchChanged,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: DisplayListOfTasks(
+                  isVisible: true,
+                  tasks: switchValue == 1
+                      ? cubit.todayTasks
+                      : cubit.completedTasks,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

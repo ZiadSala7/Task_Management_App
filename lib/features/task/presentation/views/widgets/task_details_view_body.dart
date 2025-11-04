@@ -30,7 +30,9 @@ class TaskDetailsViewBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               CustomButton(
-                onPressed: () {},
+                onPressed: () {
+                  
+                },
                 title: S.of(context).editTask,
                 isActive: true,
               ),

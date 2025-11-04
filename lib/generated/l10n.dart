@@ -578,6 +578,26 @@ class S {
   String get upTodo {
     return Intl.message('UpTodo', name: 'upTodo', desc: '', args: []);
   }
+
+  /// `Are You sure you want to delete this task?`
+  String get deleteTaskDesc {
+    return Intl.message(
+      'Are You sure you want to delete this task?',
+      name: 'deleteTaskDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Task title : `
+  String get taskTitleDel {
+    return Intl.message(
+      'Task title : ',
+      name: 'taskTitleDel',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

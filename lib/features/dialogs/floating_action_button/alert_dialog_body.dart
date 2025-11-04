@@ -22,7 +22,7 @@ class AlertDialogBody extends StatelessWidget {
       key: formKey,
       child: Column(
         spacing: 16,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             S.of(context).addTask,

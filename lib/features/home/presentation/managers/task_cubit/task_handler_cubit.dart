@@ -34,6 +34,7 @@ class TaskHandlerCubit extends Cubit<TaskHandlerStates> {
       dateTimeNow: DateTime.now(),
       categoryModel: categoryModel,
       taskPriority: taskPriority,
+      openToEdits: true,
     );
     // reset task title and task description
     taskTitle = taskDesc = "";
@@ -41,6 +42,9 @@ class TaskHandlerCubit extends Cubit<TaskHandlerStates> {
     addTaskToList(model);
   }
 
+  updateTask(TaskModel model) {
+    
+  }
   addTaskToList(TaskModel model) {
     // we will recieve a model of a task and put it in the database
     todayTasks.add(model);

@@ -1,7 +1,7 @@
 import '../../../dialogs/category/data/category_model.dart';
 
 class TaskModel {
-  bool isCompleted;
+  bool isCompleted, openToEdits;
   final String taskTitle, taskDescription;
   final DateTime? time;
   final DateTime dateTimeNow;
@@ -14,7 +14,8 @@ class TaskModel {
     required this.time,
     required this.dateTimeNow,
     this.isCompleted = false,
+    this.openToEdits = false,
     required this.categoryModel,
-    required this.taskPriority
+    required this.taskPriority,
   });
 }

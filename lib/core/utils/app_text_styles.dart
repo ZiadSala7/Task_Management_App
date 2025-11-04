@@ -32,6 +32,7 @@ abstract class AppTextStyles {
   static const TextStyle bold16 = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 16,
+    color: AppColors.white,
   );
 
   static const TextStyle bold19 = TextStyle(
@@ -42,6 +43,7 @@ abstract class AppTextStyles {
   static const TextStyle semiBold16 = TextStyle(
     fontWeight: FontWeight.w600,
     fontSize: 16,
+    color: AppColors.white,
   );
 
   static const TextStyle bold28 = TextStyle(

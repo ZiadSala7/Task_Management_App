@@ -66,6 +66,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Create new category",
     ),
     "deleteTask": MessageLookupByLibrary.simpleMessage("Delete Task"),
+    "deleteTaskDesc": MessageLookupByLibrary.simpleMessage(
+      "Are You sure you want to delete this task?",
+    ),
     "desc": MessageLookupByLibrary.simpleMessage("Description"),
     "doNotHave": MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
     "editTask": MessageLookupByLibrary.simpleMessage("Edit Task"),
@@ -111,6 +114,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "taskLeft": MessageLookupByLibrary.simpleMessage("Tasks Left"),
     "taskPrio": MessageLookupByLibrary.simpleMessage("Task Priority"),
     "taskTime": MessageLookupByLibrary.simpleMessage("Task Time:"),
+    "taskTitleDel": MessageLookupByLibrary.simpleMessage("Task title : "),
     "taskaty": MessageLookupByLibrary.simpleMessage("Your Tasks"),
     "threeOnDesc": MessageLookupByLibrary.simpleMessage(
       "You can organize your daily tasks by \nadding your tasks into separate categories",

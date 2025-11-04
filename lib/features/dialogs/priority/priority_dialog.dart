@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
+import '../../../core/utils/app_colors.dart';
 import '../../../core/widgets/custom_button.dart';
 import '../../../generated/l10n.dart';
 import 'card_task_priority.dart';
@@ -17,7 +18,7 @@ class _PriorityDialogState extends State<PriorityDialog> {
   @override
   Widget build(BuildContext context) {
     return Dialog(
-      backgroundColor: const Color(0xFF2E2E2E),
+      backgroundColor: AppColors.bottomNavClr,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Container(
         padding: const EdgeInsets.all(16),
